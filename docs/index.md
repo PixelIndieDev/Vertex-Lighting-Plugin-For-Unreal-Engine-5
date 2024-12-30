@@ -68,7 +68,7 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
 
 ### **VertexLighting_Light**
 The `VertexLighting_Light` adds a static or dynamic vertex light to your scene. 
-<p style="color:#0F52BA;"> <b>[🗒️NOTE] `VertexLighting_Light` is not considered relevant for Level Bounds.</b> </p   
+<p style="color:#0F52BA;"> <b>[🗒️NOTE] `VertexLighting_Light` is not considered relevant for Level Bounds.</b> </p>   
    
 <img src="images/actor_icons/Light.png" alt="The icon of the VertexLighting_Light" width="200">
 
@@ -98,7 +98,7 @@ The `VertexLighting_Light` adds a static or dynamic vertex light to your scene.
 
 ### **VertexLighting_Light_Animated**
 The `VertexLighting_Light_Animated` adds a static or dynamic vertex light with a color curve to your scene.
-<p style="color:#0F52BA;"> <b>[🗒️NOTE] The `VertexLighting_Light_Animated` inherits from `VertexLighting_Light`.</b> </p   
+<p style="color:#0F52BA;"> <b>[🗒️NOTE] The `VertexLighting_Light_Animated` inherits from `VertexLighting_Light`.</b> </p>   
    
 <img src="images/actor_icons/Light_Animated.png" alt="The icon of the VertexLighting_Light_Animated" width="200">
 
