@@ -1,4 +1,4 @@
-<img src="https://pixelindiedev.github.io/docs/images/plugin_icon/VertexLights_Plugin_Icon.png" alt="The icon of the Vertex Lighting Plugin" width="250">
+<img src="docs/images/plugin_icon/VertexLights_Plugin_Icon.png" alt="The icon of the Vertex Lighting Plugin" width="250">
 
 ## How to Download and Install
 
