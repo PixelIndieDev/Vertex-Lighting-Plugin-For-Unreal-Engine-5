@@ -39,12 +39,9 @@ The plugin includes a demo level showcasing multiple vertex lighting configurati
 ## Plugin Components
 
 ### **VertexLighting_Manager**
-The `VertexLighting_Manager` is essential for vertex lighting functionality.
-> [!IMPORTANT]
-> Ensure only <ins>one</ins> manager is present per level.
-
-> [!CAUTION]
-> Only up to 256 vertex lights can be registered at the same time.
+The `VertexLighting_Manager` is essential for vertex lighting functionality.   
+{{important}} Ensure only <ins>one</ins> manager is present per level. {{end}}   
+{{warning}} Only up to 256 vertex lights can be registered at the same time. {{end}}   
 <img src="images/actor_icons/Light_Manager.png" alt="The icon of the VertexLighting_Manager" width="200">
 
 #### Default Settings:
