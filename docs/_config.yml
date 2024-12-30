@@ -1,3 +1,4 @@
+theme: jekyll-theme-cayman
 title: Vertex Lighting Plugin Documentation
 description: Complete documentation on the Vertex Lighting plugin for Unreal Engine
 site_favicon: favicon.ico
