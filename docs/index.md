@@ -10,7 +10,8 @@
 
 3. **Enable the Plugin**
    - The plugin should be enabled by default. However, double-check that it is enabled in the **Plugins** menu within Unreal Engine.
-     <img src="images/guide_images/plugin_enabled.png" alt="The Vertex Lighting Plugin being enabled" width="400">
+   
+   <img src="images/guide_images/plugin_enabled.png" alt="The Vertex Lighting Plugin being enabled" width="400">
 
 ---
 
