@@ -1,4 +1,4 @@
-<img src="images/plugin_icon/VertexLights_Plugin_Icon.png" alt="The icon of the Vertex Lighting Plugin" width="250">
+<img src="images/plugin_icon/VertexLights_Plugin_Icon.png" alt="The icon of the Vertex Lighting Plugin" width="350">
 
 ## How to Download and Install
 
