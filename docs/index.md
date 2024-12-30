@@ -32,6 +32,7 @@
 ## Demo Level
 
 The plugin includes a demo level showcasing multiple vertex lighting configurations. Experiment with the light settings to get a feel for their functionality and effects.
+<img src="images/guide_images/demo_map.png" alt="The icon of the VertexLighting_Manager" width="1024">
 
 ---
 
