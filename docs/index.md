@@ -9,7 +9,8 @@
    - Place the plugin folder into your project's `Plugins` directory. (Create a `Plugins` folder if it doesn't already exist.)
 
 3. **Enable the Plugin**
-   - The plugin should be enabled by default. However, double-check that it is enabled in the **Plugins** menu within Unreal Engine. <img src="images/guide_images/plugin_enabled.png" alt="The Vertex Lighting Plugin being enabled" width="400">
+   - The plugin should be enabled by default. However, double-check that it is enabled in the **Plugins** menu within Unreal Engine.
+     <img src="images/guide_images/plugin_enabled.png" alt="The Vertex Lighting Plugin being enabled" width="400">
 
 ---
 
@@ -70,6 +71,7 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
 The `VertexLighting_Light` adds a static or dynamic vertex light to your scene. 
 > [!NOTE]
 > `VertexLighting_Light` is not considered relevant for Level Bounds.
+
 <img src="images/actor_icons/Light.png" alt="The icon of the VertexLighting_Light" width="200">
 
 #### Default Settings:
@@ -102,6 +104,7 @@ The `VertexLighting_Light` adds a static or dynamic vertex light to your scene.
 The `VertexLighting_Light_Animated` adds a static or dynamic vertex light with a color curve to your scene.
 > [!NOTE]
 > The `VertexLighting_Light_Animated` inherits from `VertexLighting_Light`.
+
 <img src="images/actor_icons/Light_Animated.png" alt="The icon of the VertexLighting_Light_Animated" width="200">
 
 #### Animated Light Settings:
