@@ -3,6 +3,3 @@
 
 > [!TIP]
 > [View the Documentation](https://pixelindiedev.github.io/Vertex-Lighting-Plugin-For-Unreal-Engine-5/)
-
-> [!IMPORTANT] 
-> PLUGIN BEING UPLOADED TO GITHUB IN A COUPLE DAYS (INCLUDING DOCUMENTATION)
