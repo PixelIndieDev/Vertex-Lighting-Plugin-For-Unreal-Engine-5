@@ -12,7 +12,8 @@
    - The plugin should be enabled by default. However, double-check that it is enabled in the **Plugins** menu within Unreal Engine.
    
    <img src="images/guide_images/plugin_enabled.png" alt="The Vertex Lighting Plugin being enabled" width="400">
-
+   
+<p style="color:#4F7942;"> <b>[💡Dependencies] This plugin depends on the <i>MeshPainting</i> plugin. The MeshPainting plugin is used to paint the icons of the vertex light actors to match their light color or ambient color.</b> </p>
 ---
 
 ## How to Use
@@ -68,17 +69,17 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
 
 ### **VertexLighting_Light**
 The `VertexLighting_Light` adds a static or dynamic vertex light to your scene. 
-<p style="color:#0F52BA;"> <b>[🗒️NOTE] `VertexLighting_Light` is not considered relevant for Level Bounds.</b> </p>   
+<p style="color:#0F52BA;"> <b>[🗒️NOTE] <i>VertexLighting_Light</i> is not considered relevant for Level Bounds.</b> </p>   
    
 <img src="images/actor_icons/Light.png" alt="The icon of the VertexLighting_Light" width="200">
 
 #### Default Settings:
 - **Light Color**: Color of the light.
   - *Default*: Hex sRGB - FFFFFFFF | *Type*: Linear Color
-<p style="color:#E1C16E;"> <b>[⚠️WARNING] Overridden by color curves for `VertexLighting_Light_Animated`.</b> </p>
+<p style="color:#E1C16E;"> <b>[⚠️WARNING] Overridden by color curves for <i>VertexLighting_Light_Animated</i>.</b> </p>
 - **Brightness**: Light intensity.
   - *Default*: 10x | *Type*: Float | *Range*: 0.0-100.0
-<p style="color:#E1C16E;"> <b>[⚠️WARNING] Overridden by color curves for `VertexLighting_Light_Animated`.</b> </p>
+<p style="color:#E1C16E;"> <b>[⚠️WARNING] Overridden by color curves for <i>VertexLighting_Light_Animated</i>.</b> </p>
 - **Influence Radius**: Radius of the light's influence.
   - *Default*: 300cm | *Type*: Float | *Range*: 0.0-Infinite
 - **Influence to Normal**: Controls how directional the vertex light should be, on a percentage basis. 0% makes the light completely non-directional, while 100% makes it fully directional.
@@ -98,7 +99,7 @@ The `VertexLighting_Light` adds a static or dynamic vertex light to your scene.
 
 ### **VertexLighting_Light_Animated**
 The `VertexLighting_Light_Animated` adds a static or dynamic vertex light with a color curve to your scene.
-<p style="color:#0F52BA;"> <b>[🗒️NOTE] The `VertexLighting_Light_Animated` inherits from `VertexLighting_Light`.</b> </p>   
+<p style="color:#0F52BA;"> <b>[🗒️NOTE] The <i>VertexLighting_Light_Animated</i> inherits from <i>VertexLighting_Light</i>.</b> </p>   
    
 <img src="images/actor_icons/Light_Animated.png" alt="The icon of the VertexLighting_Light_Animated" width="200">
 
