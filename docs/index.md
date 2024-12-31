@@ -56,6 +56,10 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
   - *Default*: 0% | *Type*: Float | *Range*: 0.0-100.0
 - **ShowCombinedVertexLightInfo**: Enables debug information.
   - *Default*: True | *Type*: Boolean
+ 
+#### Sun Direction:
+The sun's direction is controlled by the rotation of the VertexLighting_Manager and is visually represented by a yellow arrow originating from the manager.   
+<img src="images/guide-images/sun_direction.png" alt="Image of the yellow arrow originating from the manager" width="200">
 
 #### Tick Rate:
 - **Light Update Tickrate**: Time interval between light updates. Set to `0.0` to disable updates.
@@ -120,7 +124,6 @@ The `VertexLighting_Light_Animated` adds a static or dynamic vertex light with a
 ---
 
 ## Other Components
-
 ### **Color Curve**
 `VertexLighting_Light_Animated` uses a color curve for its `Light Color` and `Brightness`
 
