@@ -5,7 +5,7 @@
 ## Supported Engine Versions
 - Unreal Engine 5.5
 
-   <p style="color:#0F52BA;"> <b>[🗒️NOTE] <a href="[https://github.com/PixelIndieDev/Vertex-Lighting-Plugin-For-Unreal-Engine-5/issues/1]" target="_self">Why are no other engine versions supported?</a> </b> </p>   
+   <p style="color:#0F52BA;"> <b>[🗒️NOTE] <a href="https://github.com/PixelIndieDev/Vertex-Lighting-Plugin-For-Unreal-Engine-5/issues/1" target="_self">Why are no other engine versions supported?</a> </b> </p>   
 
 ---
 
