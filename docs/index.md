@@ -1,12 +1,3 @@
-<head>
-<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-<link rel="shortcut icon" href="favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Vertex Lighting Plugin Documentation" />
-<link rel="manifest" href="favicon/site.webmanifest" />
-</head>
-
 <img src="images/plugin_icon/VertexLights_Plugin_Icon.png" alt="The icon of the Vertex Lighting Plugin" width="350">
 
 ## How to Download and Install
