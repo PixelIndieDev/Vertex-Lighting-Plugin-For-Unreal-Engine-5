@@ -1,4 +1,13 @@
-<img src="images/plugin_icon/VertexLights_Plugin_Icon.png" alt="The icon of the Vertex Lighting Plugin" width="350">
+<img src="images/plugin_icon/VertexLights_Plugin_Icon.png" alt="The icon of the Vertex Lighting Plugin" width="350">   
+
+---   
+
+## Supported Engine Versions
+- Unreal Engine 5.5
+
+   <p style="color:#0F52BA;"> <b>[🗒️NOTE] <a href="[https://www.w3schools.com/](https://github.com/PixelIndieDev/Vertex-Lighting-Plugin-For-Unreal-Engine-5/issues/1)">Why are no other engine versions supported?</a </b> </p>   
+
+---
 
 ## How to Download and Install
 
@@ -59,6 +68,7 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
  
 #### Sun Direction:
 The sun's direction is controlled by the rotation of the VertexLighting_Manager and is visually represented by a yellow arrow originating from the manager.   
+
 <img src="images/guide-images/sun_direction.png" alt="Image of the yellow arrow originating from the manager" width="200">
 
 #### Tick Rate:
