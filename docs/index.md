@@ -1,4 +1,4 @@
-<img src="images/plugin_icon/VertexLights_Plugin_Icon.png" alt="The icon of the Vertex Lighting Plugin" width="350">   
+<img src="images/plugin_icon/VertexLights_Plugin_Icon.avif" alt="The icon of the Vertex Lighting Plugin" width="350">   
 
 ---   
 
@@ -20,7 +20,7 @@
 3. **Enable the Plugin**
    - The plugin should be enabled by default. However, double-check that it is enabled in the **Plugins** menu within Unreal Engine.
    
-   <img src="images/guide_images/plugin_enabled.png" alt="The Vertex Lighting Plugin being enabled" width="400">
+   <img src="images/guide_images/plugin_enabled.avif" alt="The Vertex Lighting Plugin being enabled" width="400">
    
 <p style="color:#4F7942;"> <b>[💡Dependencies] This plugin depends on the <i>MeshPainting</i> plugin. The MeshPainting plugin is used to paint the icons of the vertex light actors to match their light color or ambient color.</b> </p>
 ---
@@ -29,22 +29,22 @@
 
 1. **Set Up the Plugin**
    - In the Content Browser, navigate to the Vertex Lighting Plugin directory.
-   - Drag and drop the `VertexLighting_Manager` into your level. <img src="images/guide_images/manager_in_folder.png" alt="A guide image for the VertexLighting_Manager location in the folder" width="700">
+   - Drag and drop the `VertexLighting_Manager` into your level. <img src="images/guide_images/manager_in_folder.avif" alt="A guide image for the VertexLighting_Manager location in the folder" width="700">
 
 2. **Configure Materials**
-   - Locate the `VertexLights_MaterialFunction` in the Logic folder within the Vertex Lighting Plugin directory. <img src="images/guide_images/materialfunction_in_folder.png" alt="A guide image for the materialfunction location in the folder" width="700">
-   - Open the materials you want to use and multiply your base color/texture (Input A) with the `VertexLights_MaterialFunction` (Input B). <img src="images/guide_images/materialfunction.png" alt="A guide image for the materialfunction in a material" width="600">
+   - Locate the `VertexLights_MaterialFunction` in the Logic folder within the Vertex Lighting Plugin directory. <img src="images/guide_images/materialfunction_in_folder.avif" alt="A guide image for the materialfunction location in the folder" width="700">
+   - Open the materials you want to use and multiply your base color/texture (Input A) with the `VertexLights_MaterialFunction` (Input B). <img src="images/guide_images/materialfunction.avif" alt="A guide image for the materialfunction in a material" width="600">
    - Connect the result of the multiplication to the `Base Color` and/or `Emissive Color` of your material.
 
 3. **Add Lights**
-   - Place a `VertexLighting_Light` or `VertexLighting_Light_Animated` actor into your level to add lights. <img src="images/guide_images/actors_in_folder.png" alt="A guide image for the VertexLighting_Light and VertexLighting_Light_Animated location in the folder" width="700">
+   - Place a `VertexLighting_Light` or `VertexLighting_Light_Animated` actor into your level to add lights. <img src="images/guide_images/actors_in_folder.avif" alt="A guide image for the VertexLighting_Light and VertexLighting_Light_Animated location in the folder" width="700">
 
 ---
 
 ## Demo Level
 
 The plugin includes a demo level showcasing multiple vertex lighting configurations. Experiment with the light settings to get a feel for their functionality and effects.
-<img src="images/guide_images/demo_map.png" alt="The icon of the VertexLighting_Manager" width="1024">
+<img src="images/guide_images/demo_map.avif" alt="The icon of the VertexLighting_Manager" width="1024">
 
 ---
 
@@ -56,7 +56,7 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
 
 <p style="color:#D2042D;"> <b>[‼️CAUTION] Only up to 256 vertex lights can be registered at the same time.</b> </p>
  
-<img src="images/actor_icons/Light_Manager.png" alt="The icon of the VertexLighting_Manager" width="200">
+<img src="images/actor_icons/Light_Manager.avif" alt="The icon of the VertexLighting_Manager" width="200">
 
 #### Default Settings:
 - **Ambient Color**: Default environmental color.
@@ -69,7 +69,7 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
 #### Sun Direction:
 The sun's direction is controlled by the rotation of the VertexLighting_Manager and is visually represented by a yellow arrow originating from the manager.   
 
-<img src="images/guide-images/sun_direction.png" alt="Image of the yellow arrow originating from the manager" width="200">
+<img src="images/guide-images/sun_direction.avif" alt="Image of the yellow arrow originating from the manager" width="200">
 
 #### Tick Rate:
 - **Light Update Tickrate**: Time interval between light updates. Set to `0.0` to disable updates.
@@ -85,7 +85,7 @@ The sun's direction is controlled by the rotation of the VertexLighting_Manager 
 The `VertexLighting_Light` adds a static or dynamic vertex light to your scene. 
 <p style="color:#0F52BA;"> <b>[🗒️NOTE] <i>VertexLighting_Light</i> is not considered relevant for Level Bounds.</b> </p>   
    
-<img src="images/actor_icons/Light.png" alt="The icon of the VertexLighting_Light" width="200">
+<img src="images/actor_icons/Light.avif" alt="The icon of the VertexLighting_Light" width="200">
 
 #### Default Settings:
 - **Light Color**: Color of the light.
@@ -115,7 +115,7 @@ The `VertexLighting_Light` adds a static or dynamic vertex light to your scene.
 The `VertexLighting_Light_Animated` adds a static or dynamic vertex light with a color curve to your scene.
 <p style="color:#0F52BA;"> <b>[🗒️NOTE] The <i>VertexLighting_Light_Animated</i> inherits from <i>VertexLighting_Light</i>.</b> </p>   
    
-<img src="images/actor_icons/Light_Animated.png" alt="The icon of the VertexLighting_Light_Animated" width="200">
+<img src="images/actor_icons/Light_Animated.avif" alt="The icon of the VertexLighting_Light_Animated" width="200">
 
 #### Animated Light Settings:
 - **Color Curve**: Defines the color animation curve.
