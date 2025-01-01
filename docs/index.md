@@ -10,7 +10,9 @@
 ---
 
 <h2 style="color:#8A2BE2;"> <b>📑Limitations</b> </h2>  
-<p style="color:#8A2BE2;"> <b>Vertex Lighting does not work on landscapes.</b> </p>  
+<ul>
+   <li style="color:#8A2BE2;"> <b>Vertex Lighting does not work on landscapes.</b> </li>
+</ul>
 
 ---
 
