@@ -29,7 +29,7 @@
    
    <img src="images/guide_images/plugin_enabled.avif" alt="The Vertex Lighting Plugin being enabled" width="400">
    
-<p style="color:#4F7942;"> <b>[💡Dependencies] This plugin depends on the <i>MeshPainting</i> plugin. The MeshPainting plugin is used to paint the icons of the vertex light actors to match their light color or ambient color.</b> </p>
+<p style="color:#4F7942;"> <b>[💡Dependencies] This plugin depends on the <i>MeshPainting</i> plugin. The <i>MeshPainting</i> plugin is only used to paint the icons of the vertex light actors in the editor to match their light color or ambient color. It is NOT used for the actual vertex lighting.</b> </p>
 ---
 
 ## How to Use
