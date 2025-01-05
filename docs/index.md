@@ -161,3 +161,6 @@ Ensure the following:
 - The `VertexLights_MaterialFunction` is properly multiplied with your material's texture.
 - The model has sufficient vertices within the light's influence range. Vertex lights only illuminate vertices, so ensure your model has enough for visible effects.
 - You are not trying to light a [landscape](https://dev.epicgames.com/documentation/en-us/unreal-engine/creating-landscapes-in-unreal-engine).
+
+### **Crash: AnimSequenceBase error**
+- Make sure you have the `Animation Compression Library` plugin, made by Epic Games, enabled.
