@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.1",
+	"VersionName": "1.2",
 	"FriendlyName": "Vertex Lighting Plugin",
 	"Description": "Easily integrate vertex lighting into your Unreal Engine projects with just a few clicks.",
 	"Category": "Lighting",

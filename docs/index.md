@@ -61,26 +61,44 @@ The plugin includes a demo level showcasing multiple vertex lighting configurati
 The `VertexLighting_Manager` is essential for vertex lighting functionality.   
 <p style="color:#8A2BE2;"> <b>[📑IMPORTANT] Ensure only <ins>one</ins> manager is present per level.</b> </p>
 
-<p style="color:#D2042D;"> <b>[‼️CAUTION] Only up to 256 vertex lights can be registered at the same time.</b> </p>
+<p style="color:#D2042D;"> <b>[‼️CAUTION] Only up to 256 vertex lights can be registered at the same time, without modifications.</b> </p>
  
 <img src="images/actor_icons/Light_Manager.avif" alt="The icon of the VertexLighting_Manager" width="200">
 
 #### Default Settings:
+
+##### Day Night Cycle:
+- **UseDayNightCycleAmbientColor**:  Enables ambient color changes according to the day-night cycle.
+  - *Default*: False | *Type*: Boolean
+- **StartingTime**: Defines the initial time of day using a 24-hour format.
+  - *Default*: 07:00 | *Type*: Time Structure [Integer:Integer]
+- **DayNightCycleColorCurve**: Defines the color transitions for the day-night cycle.
+  - *Default*: "VertextLighting_ExampleDayNightCycle_ColorCurve" | *Type*: Curve Linear Color
+- **SecondsPerMinuteInGame**: Specifies how many real-world seconds equate to one in-game minute.
+  - *Default*: 0.01s | *Type*: Float | *Range*: 0.0-Infinite
+- **TickRate DayNightCycle**: Time interval between day-night cycle updates. Set to `0.0` to disable updates.
+  - *Default*: 0.25s | *Type*: Float | *Range*: 0.0-Infinite
+
+##### Ambient:
 - **Ambient Color**: Default environmental color.
   - *Default*: Hex sRGB - 7C7C7CFF | *Type*: Linear Color
 - **SunNormalInfluence**: Controls how directional the vertex light sunlight should be, on a percentage basis. 0% makes the sunlight completely non-directional, while 100% makes it fully directional.
   - *Default*: 0% | *Type*: Float | *Range*: 0.0-100.0
-- **ShowCombinedVertexLightInfo**: Enables debug information.
+
+##### Tickrate:
+- **Light Update Tickrate**: Time interval between light updates. Set to `0.0` to disable updates.
+  - *Default*: 0.1s | *Type*: Float | *Range*: 0.0-Infinite
+
+##### Debug:
+- **ShowCombinedVertexLightInfo**: Enables debug information about the active vertex lights.
+  - *Default*: True | *Type*: Boolean
+- **ShowCombinedVertexLightInfo**: Enables debug information about the exact day-night cycle time.
   - *Default*: True | *Type*: Boolean
  
 #### Sun Direction:
 The sun's direction is controlled by the rotation of the VertexLighting_Manager and is visually represented by a yellow arrow originating from the manager.   
 
 <img src="images/guide-images/sun_direction.avif" alt="Image of the yellow arrow originating from the manager" width="200">
-
-#### Tick Rate:
-- **Light Update Tickrate**: Time interval between light updates. Set to `0.0` to disable updates.
-  - *Default*: 0.1s | *Type*: Float | *Range*: 0.0-Infinite
 
 #### In-Editor Events:
 - **Draw All Preview Lights**: Displays all vertex lights in the editor.
@@ -149,6 +167,18 @@ The `VertexLighting_Light_Animated` adds a static or dynamic vertex light with a
 - **G Channel**: Defines the green color
 - **B Channel**: Defines the blue color
 - **A Channel**: Defines the brightness
+
+---
+
+## Modifying maximum registered vertex lights
+To adjust the maximum number of vertex lights that can be registered at the same time:
+- Locate the 'VertexLightData_RenderTarget' render texture in the Content Browser.
+    - Path: `VertexLightingPlugin/Content/Logic/TextureRenderTarget/VertexLightData_RenderTarget`
+- Open the texture file.
+- Find the 'Size X' setting.
+    - This setting controls the maximum number of registered vertex lights.
+- The default value is 256. Adjust as needed.
+   - Do not modify the Size Y setting.
 
 ---
 
