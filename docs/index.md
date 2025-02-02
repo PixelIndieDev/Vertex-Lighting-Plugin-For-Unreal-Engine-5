@@ -85,6 +85,12 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
 - **SunNormalInfluence**: Controls how directional the vertex light sunlight should be, on a percentage basis. 0% makes the sunlight completely non-directional, while 100% makes it fully directional.
   - *Default*: 0% | *Type*: Float | *Range*: 0.0-100.0
 
+##### Skybox:
+- **ChangeSkyboxColorWithDayNightCycle**: Adjusts the linked skybox actor’s overall color based on the 'DayNightCycleColorCurve' and time. The linked skybox actor must inherit the 'VertexLighting_Skybox_Interface' for this function to work.
+  - *Default*: True | *Type*: Boolean
+- **Skybox Actor**: Specifies the linked skybox actor.
+  - *Default*: None | *Type*: Actor
+
 ##### Tickrate:
 - **Light Update Tickrate**: Time interval between light updates. Set to `0.0` to disable updates.
   - *Default*: 0.1s | *Type*: Float | *Range*: 0.0-Infinite
@@ -178,7 +184,7 @@ To adjust the maximum number of vertex lights that can be registered at the same
 - Find the 'Size X' setting.
     - This setting controls the maximum number of registered vertex lights.
 - The default value is 256. Adjust as needed.
-   - Do not modify the Size Y setting.
+   - Do not modify the 'Size Y' setting.
 
 ---
 
