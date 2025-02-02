@@ -86,7 +86,7 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
   - *Default*: 0% | *Type*: Float | *Range*: 0.0-100.0
 
 ##### Skybox:
-- **ChangeSkyboxColorWithDayNightCycle**: Adjusts the linked skybox actor’s overall color based on the 'DayNightCycleColorCurve' and time. The linked skybox actor must inherit the 'VertexLighting_Skybox_Interface' for this function to work.
+- **ChangeSkyboxColorWithDayNightCycle**: Adjusts the linked skybox actor’s overall color based on the `DayNightCycleColorCurve` and time. The linked skybox actor must inherit the `VertexLighting_Skybox_Interface` for this function to work.
   - *Default*: True | *Type*: Boolean
 - **Skybox Actor**: Specifies the linked skybox actor.
   - *Default*: None | *Type*: Actor
