@@ -170,9 +170,9 @@ The `VertexLighting_Light_Animated` adds a static or dynamic vertex light with a
 #### Default Settings:
 - **WorldPosition (Optional)**: Allows manual override of the world position. Defaults to the Absolute World Position.
   - *Default*: Absolute World Position | *Type*: Vector3
-- **Pixel Based Normals (Optional)**: Best suited for the normals of 2D sprite characters. Only works when the `DisableVertexInterpolator` option is set to enabled.
+- **PixelBasedNormals (Optional)**: Best suited for the normals of 2D sprite characters. Only works when the `DisableVertexInterpolator` option is set to enabled.
   - *Default*: 0.0, 0.0, 1.0 | *Type*: Vector3
-- **Vertex Based Normals (Optional)**: Input for normals interpolated per vertex.
+- **VertexBasedNormals (Optional)**: Input for normals interpolated per vertex.
   - *Default*: VertexNormalWS | *Type*: Vector3
 - **DisableVertexInterpolator (Optional)**: Disables vertex interpolation.
   - *Default*: False | *Type*: Boolean
