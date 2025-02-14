@@ -104,7 +104,7 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
 #### Sun Direction:
 The sun's direction is controlled by the rotation of the VertexLighting_Manager and is visually represented by a yellow arrow originating from the manager.   
 
-<img src="images/guide-images/sun_direction.avif" alt="Image of the yellow arrow originating from the manager" width="200">
+<img src="images/guide_images/sun_direction.avif" alt="Image of the yellow arrow originating from the manager" width="200">
 
 #### In-Editor Events:
 - **Draw All Preview Lights**: Displays all vertex lights in the editor.
@@ -165,6 +165,20 @@ The `VertexLighting_Light_Animated` adds a static or dynamic vertex light with a
 ---
 
 ## Other Components
+### **VertexLights_MaterialFunction**
+
+#### Default Settings:
+- **WorldPosition (Optional)**: Allows manual override of the world position. Defaults to the Absolute World Position.
+  - *Default*: Absolute World Position | *Type*: Vector3
+- **PixelBasedNormals (Optional)**: Best suited for the normals of 2D sprite characters. Only works when the `DisableVertexInterpolator` option is set to enabled.
+  - *Default*: 0.0, 0.0, 1.0 | *Type*: Vector3
+- **VertexBasedNormals (Optional)**: Input for normals interpolated per vertex.
+  - *Default*: VertexNormalWS | *Type*: Vector3
+- **DisableVertexInterpolator (Optional)**: Disables vertex interpolation.
+  - *Default*: False | *Type*: Boolean
+
+---
+
 ### **Color Curve**
 `VertexLighting_Light_Animated` uses a color curve for its `Light Color` and `Brightness`
 
