@@ -3,3 +3,6 @@
 
 > [!TIP]
 > [View the Documentation](https://pixelindiedev.github.io/Vertex-Lighting-Plugin-For-Unreal-Engine-5/)
+
+> [!NOTE] 
+> This project builds upon the work of [EvilReFlex](https://x.com/evilreflex)
