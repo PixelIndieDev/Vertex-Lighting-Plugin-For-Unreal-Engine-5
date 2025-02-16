@@ -214,3 +214,8 @@ Ensure the following:
 
 ### **Crash: AnimSequenceBase error**
 - Make sure you have the `Animation Compression Library` plugin, made by Epic Games, enabled.
+
+---
+
+## Credit
+<p style="color:#0F52BA;"> <b>[🗒️NOTE] This project builds upon the work of <a href="https://x.com/evilreflex" target="_self">EvilReFlex</a> </b> </p>
