@@ -78,6 +78,12 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
   - *Default*: 0.01s | *Type*: Float | *Range*: 0.0-Infinite
 - **TickRate DayNightCycle**: Time interval between day-night cycle updates. Set to `0.0` to disable updates.
   - *Default*: 0.25s | *Type*: Float | *Range*: 0.0-Infinite
+ 
+###### Time Events:
+- **Call OnMinute**:  Enables the event dispatcher that triggers when the time updates by one minute.
+  - *Default*: False | *Type*: Boolean
+- **Call OnHour**:  Enables the event dispatcher that triggers when the time updates by one hour.
+  - *Default*: False | *Type*: Boolean
 
 ##### Ambient:
 - **Ambient Color**: Default environmental color.
@@ -214,3 +220,8 @@ Ensure the following:
 
 ### **Crash: AnimSequenceBase error**
 - Make sure you have the `Animation Compression Library` plugin, made by Epic Games, enabled.
+
+---
+
+## Credit
+<p style="color:#0F52BA;"> <b>[🗒️NOTE] Portions of this project are based and improved upon on the vertex lighting implementation originally created by <a href="https://x.com/evilreflex" target="_self">EvilReFlex</a>, shared via Discord.</b> </p>
