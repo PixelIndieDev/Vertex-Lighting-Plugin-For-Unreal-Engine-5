@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2024 V
+Copyright (c) 2025 PixelIndieDev
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,20 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Third-Party Components and Licensing
+
+EvilReFlex Vertex Lighting Code
+
+Portions of this project are derived from the core vertex lighting implementation by EvilReFlex, originally shared via Discord.
+
+These portions are licensed under the Creative Commons Attribution 4.0 International License.
+
+Attribution: EvilReFlex  
+Source: Shared on Discord (retrieved in 2025)  
+License: CC BY 4.0
+
+Modifications were made to adapt his code into a UE5 plugin and to extend its functionality into a way that fits my needs.
+All derivative use complies with the terms of the CC BY 4.0 license.
