@@ -4,6 +4,7 @@
 
 ## Supported Engine Versions
 - Unreal Engine 5.5
+- Unreal Engine 5.6
 
    <p style="color:#0F52BA;"> <b>[🗒️NOTE] <a href="https://github.com/PixelIndieDev/Vertex-Lighting-Plugin-For-Unreal-Engine-5/issues/1" target="_self">Why are no other engine versions supported?</a> </b> </p>   
 
@@ -29,7 +30,6 @@
    
    <img src="images/guide_images/plugin_enabled.avif" alt="The Vertex Lighting Plugin being enabled" width="400">
    
-<p style="color:#4F7942;"> <b>[💡Dependencies] This plugin depends on the <i>MeshPainting</i> plugin. The <i>MeshPainting</i> plugin is only used to paint the icons of the vertex light actors in the editor to match their light color or ambient color. It is NOT used for the actual vertex lighting.</b> </p>
 ---
 
 ## How to Use
@@ -61,7 +61,7 @@ The plugin includes a demo level showcasing multiple vertex lighting configurati
 The `VertexLighting_Manager` is essential for vertex lighting functionality.   
 <p style="color:#8A2BE2;"> <b>[📑IMPORTANT] Ensure only <ins>one</ins> manager is present per level.</b> </p>
 
-<p style="color:#D2042D;"> <b>[‼️CAUTION] Only up to 256 vertex lights can be registered at the same time, without modifications.</b> </p>
+<p style="color:#D2042D;"> <b>[‼️CAUTION] Only up to 256 vertex lights can be registered at the same time, without easy and simple modifications.</b> </p>
  
 <img src="images/actor_icons/Light_Manager.avif" alt="The icon of the VertexLighting_Manager" width="200">
 
@@ -78,6 +78,12 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
   - *Default*: 0.01s | *Type*: Float | *Range*: 0.0-Infinite
 - **TickRate DayNightCycle**: Time interval between day-night cycle updates. Set to `0.0` to disable updates.
   - *Default*: 0.25s | *Type*: Float | *Range*: 0.0-Infinite
+ 
+###### Time Events:
+- **Call OnMinute**:  Enables the event dispatcher that triggers when the time updates by one minute.
+  - *Default*: False | *Type*: Boolean
+- **Call OnHour**:  Enables the event dispatcher that triggers when the time updates by one hour.
+  - *Default*: False | *Type*: Boolean
 
 ##### Ambient:
 - **Ambient Color**: Default environmental color.
@@ -170,12 +176,8 @@ The `VertexLighting_Light_Animated` adds a static or dynamic vertex light with a
 #### Default Settings:
 - **WorldPosition (Optional)**: Allows manual override of the world position. Defaults to the Absolute World Position.
   - *Default*: Absolute World Position | *Type*: Vector3
-- **PixelBasedNormals (Optional)**: Best suited for the normals of 2D sprite characters. Only works when the `DisableVertexInterpolator` option is set to enabled.
-  - *Default*: 0.0, 0.0, 1.0 | *Type*: Vector3
 - **VertexBasedNormals (Optional)**: Input for normals interpolated per vertex.
   - *Default*: VertexNormalWS | *Type*: Vector3
-- **DisableVertexInterpolator (Optional)**: Disables vertex interpolation.
-  - *Default*: False | *Type*: Boolean
 
 ---
 
@@ -218,4 +220,4 @@ Ensure the following:
 ---
 
 ## Credit
-<p style="color:#0F52BA;"> <b>[🗒️NOTE] This project builds upon the work of <a href="https://x.com/evilreflex" target="_self">EvilReFlex</a> </b> </p>
+<p style="color:#0F52BA;"> <b>[🗒️NOTE] Portions of this project are based and improved upon on the vertex lighting implementation originally created by <a href="https://x.com/evilreflex" target="_self">EvilReFlex</a>, shared via Discord.</b> </p>
