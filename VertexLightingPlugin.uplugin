@@ -1,9 +1,9 @@
 {
 	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "1.3.7",
+	"Version": 3,
+	"VersionName": "1.4.0",
 	"FriendlyName": "Vertex Lighting Plugin",
-	"Description": "Easily integrate vertex lighting into your Unreal Engine projects with just a few clicks.",
+	"Description": "Easily integrate vertex lighting into your Unreal Engine projects with just a few clicks",
 	"Category": "Lighting",
 	"CreatedBy": "PixelIndieDev",
 	"CreatedByURL": "https://github.com/PixelIndieDev/Vertex-Lighting-Plugin-For-Unreal-Engine-5",
@@ -14,11 +14,16 @@
 	"IsBetaVersion": true,
 	"IsExperimentalVersion": false,
 	"Installed": false,
-	"Plugins": [
+	"Modules": [
 		{
-			"Name": "MeshPainting",
-			"Enabled": true
+			"Name": "VertexLightingPlugin",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"Mac"
+			]
 		}
-	],
-	"NoCode": true
+	]
 }
