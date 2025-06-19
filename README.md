@@ -1,4 +1,4 @@
-# Vertex Lighting Plugin for Unreal Engine 5
+# Vertex Lighting Plugin for Unreal Engine 5 ![UE5](https://img.shields.io/badge/Unreal%20Engine-5.x-blue) ![GitHub all releases](https://img.shields.io/github/downloads/PixelIndieDev/Vertex-Lighting-Plugin-For-Unreal-Engine-5/total) 
 > Easily integrate vertex lighting into your Unreal Engine projects with just a few clicks. This plugin is written almost entirely in Blueprint, offering a flexible and accessible solution for vertex-based lighting.
 
 > [!TIP]
