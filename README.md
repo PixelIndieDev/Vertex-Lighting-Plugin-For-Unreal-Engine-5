@@ -14,7 +14,7 @@ This plugin is perfect for developers aiming to achieve:
 > [!NOTE] 
 > If you want more retro features like **N64 texture filtering**, **PSX vertex snapping** and **PSX like affine**, I suggest you to use **RetroFX** instead.
 > You can downloading RetroFX by joining [**EvilReFlex's**](https://x.com/evilreflex) discord server.
-> If you just need **vertex lighting**, *with some simple additions*, then this project is for you.
+> If you just need **vertex lighting**, **with some simple additions**, then this project is for you.
 
 ## How to Download and Install
 **Download the Plugin**
