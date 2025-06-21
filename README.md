@@ -11,6 +11,10 @@ This plugin is perfect for developers aiming to achieve:
 > [!TIP]
 > [View the Documentation](https://pixelindiedev.github.io/Vertex-Lighting-Plugin-For-Unreal-Engine-5/)
 
+> [!NOTE] 
+> If you want more retro features like **N64 texture filtering**, **PSX vertex snapping** and **PSX like affine**, I suggest you to use **RetroFX** instead.
+> You can downloading RetroFX by joining [**EvilReFlex's**](https://x.com/evilreflex) discord server.
+
 ## How to Download and Install
 **Download the Plugin**
 - Get the plugin from the GitHub Releases page or by downloading the source code.
