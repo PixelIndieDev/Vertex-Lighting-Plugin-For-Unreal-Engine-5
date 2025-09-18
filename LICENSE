@@ -34,5 +34,5 @@ Attribution: EvilReFlex
 Source: Shared on Discord (retrieved in 2025)  
 License: CC BY 4.0
 
-Modifications were made to adapt his code into a UE5 plugin and to extend its functionality into a way that fits my needs.
+Modifications were made to adapt his blueprint and HLSL code into a UE5 plugin and to extend its functionality into a way that fits my needs and improves performance.
 All derivative use complies with the terms of the CC BY 4.0 license.
