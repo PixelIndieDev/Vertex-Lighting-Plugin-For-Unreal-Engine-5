@@ -60,8 +60,6 @@ The plugin includes a demo level showcasing multiple vertex lighting configurati
 ### **VertexLighting_Manager**
 The `VertexLighting_Manager` is essential for vertex lighting functionality.   
 <p style="color:#8A2BE2;"> <b>[📑IMPORTANT] Ensure only <ins>one</ins> manager is present per level.</b> </p>
-
-<p style="color:#D2042D;"> <b>[‼️CAUTION] Only up to 256 vertex lights can be registered at the same time, without easy and simple modifications.</b> </p>
  
 <img src="images/actor_icons/Light_Manager.avif" alt="The icon of the VertexLighting_Manager" width="200">
 
@@ -86,7 +84,7 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
   - *Default*: False | *Type*: Boolean
 
 ##### Ambient:
-- **Ambient Color**: Default environmental color.
+- **AmbientColor**: Default environmental color.
   - *Default*: Hex sRGB - 7C7C7CFF | *Type*: Linear Color
 - **SunNormalInfluence**: Controls how directional the vertex light sunlight should be, on a percentage basis. 0% makes the sunlight completely non-directional, while 100% makes it fully directional.
   - *Default*: 0% | *Type*: Float | *Range*: 0.0-100.0
@@ -98,15 +96,27 @@ The `VertexLighting_Manager` is essential for vertex lighting functionality.
   - *Default*: None | *Type*: Actor
 
 ##### Tickrate:
-- **Light Update Tickrate**: Time interval between light updates. Set to `0.0` to disable updates.
+- **TickrateLightUpdate**: Time interval between light updates. Set to `0.0` to disable updates.
   - *Default*: 0.1s | *Type*: Float | *Range*: 0.0-Infinite
+ 
+##### Optimalization:
+- **MaximalLightDistanceOverride**: Overrides the maximum render distance for all the light. Set to `0.0` to disable override.
+  - *Default*: 0.0cm | *Type*: Float | *Range*: 0.0-10000.0
+- **UnloadOutsideOfView**: This will make any lights unload when hopefully not on screen.
+  - *Default*: False | *Type*: Boolean
+- **DisableTickingOffScreen**: This will make any lights stop ticking when not on screen. This may cause unintended light functioning.
+  - *Default*: False | *Type*: Boolean
 
 ##### Debug:
 - **ShowCombinedVertexLightInfo**: Enables debug information about the active vertex lights.
   - *Default*: True | *Type*: Boolean
+- **ShowVertexLightsRenderedInfo**: Enables debug information about the amount of rendered vertex lights.
+  - *Default*: True | *Type*: Boolean
 - **ShowCombinedVertexLightInfo**: Enables debug information about the exact day-night cycle time.
   - *Default*: True | *Type*: Boolean
- 
+
+<p style="color:#D2042D;"> <b>[‼️CAUTION] This actor also contains variables in the Technical category. DO NOT CHANGE THESE VARIABLES UNLESS YOU KNOW WHAT YOU'RE DOING!</b> </p>
+
 #### Sun Direction:
 The sun's direction is controlled by the rotation of the VertexLighting_Manager and is visually represented by a yellow arrow originating from the manager.   
 
@@ -125,25 +135,25 @@ The `VertexLighting_Light` adds a static or dynamic vertex light to your scene.
 <img src="images/actor_icons/Light.avif" alt="The icon of the VertexLighting_Light" width="200">
 
 #### Default Settings:
-- **Light Color**: Color of the light.
+- **LightColor**: Color of the light.
   - *Default*: Hex sRGB - FFFFFFFF | *Type*: Linear Color
-<p style="color:#E1C16E;"> <b>[⚠️WARNING] Overridden by color curves for <i>VertexLighting_Light_Animated</i>.</b> </p>
+<p style="color:#E1C16E;"> <b>[⚠️WARNING] Overridden by color curves for <i>VertexLighting_Light_Animated</i>.</b></p>
 - **Brightness**: Light intensity.
   - *Default*: 10x | *Type*: Float | *Range*: 0.0-100.0
-<p style="color:#E1C16E;"> <b>[⚠️WARNING] Overridden by color curves for <i>VertexLighting_Light_Animated</i>.</b> </p>
-- **Influence Radius**: Radius of the light's influence.
+<p style="color:#E1C16E;"> <b>[⚠️WARNING] Overridden by color curves for <i>VertexLighting_Light_Animated</i>.</b></p>
+- **InfluenceRadius**: Radius of the light's influence.
   - *Default*: 300cm | *Type*: Float | *Range*: 0.0-Infinite
-- **Influence to Normal**: Controls how directional the vertex light should be, on a percentage basis. 0% makes the light completely non-directional, while 100% makes it fully directional.
+- **InfluencetoNormal**: Controls how directional the vertex light should be, on a percentage basis. 0% makes the light completely non-directional, while 100% makes it fully directional.
   - *Default*: 0% | *Type*: Float | *Range*: 0.0-100.0
-- **Render Distance**: Maximum render distance for the light.
+- **RenderDistance**: Maximum render distance for the light.
   - *Default*: 10,000cm | *Type*: Float | *Range*: 0.0-10,000.0
-- **Is Movable Light**: Makes the light's position dynamic during updates.
+- **IsMovable Light**: Makes the light's position dynamic during updates.
   - *Default*: False | *Type*: Boolean
-- **Should Turn On In Range**: Determines if the light activates when the player is nearby.
+- **ShouldTurnOnInRange**: Determines if the light activates when the player is nearby.
   - *Default*: True | *Type*: Boolean
 
 #### Editor Settings:
-- **Show Render Distance**: Displays the render distance sphere in the editor.
+- **ShowRenderDistance**: Displays the render distance sphere in the editor.
   - *Default*: False | *Type*: Boolean
 
 ---
@@ -154,19 +164,29 @@ The `VertexLighting_Light_Animated` adds a static or dynamic vertex light with a
    
 <img src="images/actor_icons/Light_Animated.avif" alt="The icon of the VertexLighting_Light_Animated" width="200">
 
-#### Animated Light Settings:
-- **Color Curve**: Defines the color animation curve.
+#### Animated Light:
+- **ColorCurve**: Defines the color animation curve.
   - *Default*: "VertexLighting_ExampleColorCurve" | *Type*: Curve Linear Color
-- **Start Position**: Starting point of the color curve.
+- **StartPosition**: Starting point of the color curve.
   - *Default*: 0.0s | *Type*: Float
-- **Start at Random Position**: Starts the curve at a random timestamp.
+- **UseLightColorForPreview**: If true, the color used in the preview will use the 'LightColor' color. If false, it will use the starting 'StartPosition' on the 'ColorCurve' color even if it not a visible light color.
+  - *Default*: true | *Type*: Boolean
+- **StartatRandom Position**: Starts the curve at a random timestamp.
   - *Default*: False | *Type*: Boolean
-- **Is Looping**: Determines if the animation repeats. If False, the light is destroyed after playback.
+- **IsLooping**: Determines if the animation repeats. If False, the light is destroyed after playback.
   - *Default*: True | *Type*: Boolean
-- **Play Rate**: Speed of the animation playback.
+- **PlayRate**: Speed of the animation playback.
   - *Default*: 100% | *Type*: Float
-- **Should Update No Tick Rate**: Forces updates for animated lights even when tick rate updates are disabled.
+- **CurveTickRate**: Time interval between Curve Light updates. Set to `0.0` to disable updates.
+  - *Default*: 0.01s | *Type*: Float | *Range*: 0.0-Infinite
+- **ShouldUpdateNoTickRate**: Forces updates for animated lights even when tick rate updates are disabled.
   - *Default*: False | *Type*: Boolean
+
+#### Animated Light Icon:
+- **IconColorTimeValue01**: This value gets used for the 2 colors that get used in the icon coloring.
+  - *Default*: 0.5s | *Type*: Float | *Range*: Infinite
+- **IconColorTimeValue02**: This value gets used for the 2 colors that get used in the icon coloring.
+  - *Default*: 1.5s | *Type*: Float | *Range*: Infinite
 
 ---
 
@@ -194,13 +214,10 @@ The `VertexLighting_Light_Animated` adds a static or dynamic vertex light with a
 
 ## Modifying maximum registered vertex lights
 To adjust the maximum number of vertex lights that can be registered at the same time:
-- Locate the 'VertexLightData_RenderTarget' render texture in the Content Browser.
-    - Path: `VertexLightingPlugin/Content/Logic/TextureRenderTarget/VertexLightData_RenderTarget`
-- Open the texture file.
-- Find the 'Size X' setting.
-    - This setting controls the maximum number of registered vertex lights.
-- The default value is 256. Adjust as needed.
-   - Do not modify the 'Size Y' setting.
+- In-editor, go to **Edit -> Project Settings -> Plugins -> Vertex Lighting Plugin Settings**
+- Change the 'Max Lights' value to the number of your liking.
+
+<p style="color:#D2042D;"> <b>[‼️CAUTION] There you can also change the render target that gets resized when you change the 'Max Lights' value. DO NOT CHANGE THIS VARIABLES UNLESS YOU KNOW WHAT YOU'RE DOING!</b> </p>
 
 ---
 
