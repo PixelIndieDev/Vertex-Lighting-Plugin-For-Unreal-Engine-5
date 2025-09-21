@@ -12,7 +12,7 @@
 
 <h2 style="color:#8A2BE2;"> <b>📑Limitations</b> </h2>  
 <ul>
-   <li style="color:#8A2BE2;"> <b>Vertex Lighting does not work on landscapes.</b> </li>
+   <li style="color:#8A2BE2;"> <b>Vertex Lighting does not work normally on landscapes. \nTo make Vertex Ambient and Vertex Lights appear on them, set 'UseVertexInterpolator' in the 'VertexLights_MaterialFunction' to False.</b> </li>
 </ul>
 
 ---
