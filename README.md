@@ -5,8 +5,7 @@
 A lightweight **vertex lighting plugin** for **Unreal Engine 5 (UE5)** designed to deliver **per-vertex shading** light rendering.
 
 This plugin is perfect for developers aiming to achieve:
-- **Retro game visuals**
-- **Stylized shading effects**
+- **Retro lighting visuals**
 - **High performance real-time lighting for distant objects**
 
 > [!TIP]
