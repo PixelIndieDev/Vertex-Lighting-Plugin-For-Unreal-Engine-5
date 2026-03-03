@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> I'm no longer working on this plugin. I recommend looking at RetroFX by [**EvilReFlex's**](https://x.com/evilreflex). The download for RetroFX is in his discord server.
+
 # Vertex Lighting Plugin for Unreal Engine 5 
 ![UE5](https://img.shields.io/badge/Unreal%20Engine-5.5%2B-blue?style=for-the-badge&color=0096FF) ![GitHub all releases](https://img.shields.io/github/downloads/PixelIndieDev/Vertex-Lighting-Plugin-For-Unreal-Engine-5/total?style=for-the-badge&color=4CBB17) ![GitHub Repo stars](https://img.shields.io/github/stars/PixelIndieDev/Vertex-Lighting-Plugin-For-Unreal-Engine-5?style=for-the-badge&color=FFD700)
 > Easily integrate vertex lighting into your Unreal Engine projects with just a few clicks. This plugin is written almost entirely in Blueprint, offering a flexible and accessible solution for vertex-based lighting.
